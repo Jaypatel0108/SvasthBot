@@ -19,6 +19,15 @@ API_CHAT_HISTORY_URL = f"{API_BASE_URL}/chat_history"
 # Set page config
 st.set_page_config(page_title="Health Assistant", page_icon="🩺", layout="wide")
 
+# Disclaimer message
+st.markdown(
+    """
+    **Disclaimer:** Please do not enter any sensitive or personal information into this application.
+    The information provided here is for informational purposes only and is not a substitute for professional medical advice.
+    """,
+    unsafe_allow_html=True
+)
+
 # Sidebar - Light/Dark Mode Toggle
 with st.sidebar:
     st.title("⚙️ Settings")
